@@ -30,7 +30,8 @@ namespace Wojtek.IDP
                     AllowedGrantTypes = new List<string> { GrantType.AuthorizationCode },
                     RedirectUris = new List<string> { "https://localhost:44389/signin-oidc" },
                     AllowedScopes = { IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile },
-                    ClientSecrets = { new Secret("secret".Sha256()) }
+                    ClientSecrets = { new Secret("secret".Sha256()) },
+                    RequirePkce = false,
                 }
             };
     }
