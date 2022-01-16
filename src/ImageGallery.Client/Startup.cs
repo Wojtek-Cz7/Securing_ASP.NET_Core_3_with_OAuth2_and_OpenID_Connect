@@ -47,6 +47,7 @@ namespace ImageGallery.Client
                 options.ResponseType = "code";
                 //options.UsePkce = false;
                 //options.CallbackPath = new Microsoft.AspNetCore.Http.PathString("...");
+                // options.SignedOutCallbackPath = 
                 options.Scope.Add("openid");
                 options.Scope.Add("profile");
                 options.SaveTokens = true;

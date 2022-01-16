@@ -31,6 +31,7 @@ namespace Wojtek.IDP
                     RedirectUris = new List<string> { "https://localhost:44389/signin-oidc" },
                     AllowedScopes = { IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile },
                     ClientSecrets = { new Secret("secret".Sha256()) },
+                    PostLogoutRedirectUris = new List<string> { "https://localhost:44389/signout-callback-oidc" },
                     RequirePkce = true,
                 }
             };
